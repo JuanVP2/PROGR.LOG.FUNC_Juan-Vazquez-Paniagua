@@ -12,7 +12,7 @@ factorial n = n * factorial (n - 1)
 
 --ejercicio 3  **Números pares:**
 numerosPares :: Int -> [Int]
-numerosPares n = [x | x <- [0..n], even x]
+numerosPares n = [2, 4 .. n]
 
 --ejercicio 4 **Longitud de una cadena:**
 longitudCadena :: String -> Int
@@ -24,7 +24,7 @@ reversoLista = reverse
 
 --ejercicio 6 **Duplicar elementos:**
 duplicarElementos :: [Int] -> [Int]
-duplicarElementos = map (*2)
+duplicarElementos = concatMap (\x -> [x, x])
 
 --ejercicio 7 **Filtrar elementos pares:**
 filtrarPares :: [Int] -> [Int]
@@ -43,7 +43,5 @@ divisores n = [x | x <- [1..n], n `mod` x == 0]
 
 
 --ejercicio 10  **Palíndromo:**
-esPalindromo :: String -> String
-esPalindromo str
-    | (map toLower str) == reverse (map toLower str) = "Es Palindromo"
-    | otherwise = "No es palindromo"
+esPalindromo :: String -> Bool
+esPalindromo str = str == reverse str
