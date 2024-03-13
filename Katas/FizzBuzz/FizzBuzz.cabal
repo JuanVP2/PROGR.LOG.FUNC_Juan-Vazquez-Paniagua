@@ -4,8 +4,8 @@ version:            0.1.0.0
 -- synopsis:
 -- description:
 license:            NONE
-author:             edwcm
-maintainer:         edwcm@gmail.com
+author:             juan
+maintainer:         juan@gmail.com
 -- copyright:
 build-type:         Simple
 extra-doc-files:    CHANGELOG.md
